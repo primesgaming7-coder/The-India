@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111510">
+  <meta name="description" content="THE INDIA — a cinematic guide to the landscapes, places and stories of India.">
+  <title>THE INDIA — Find Your Somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="The India home">THE <span>INDIA</span><i>®</i></a>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#destinations">Destinations</a>
+      <a href="#stories">The feeling</a>
+      <a href="#film">Film</a>
+      <a href="#regions">Explore by region</a>
+    </nav>
+    <a class="header-cta" href="#journey">Start exploring <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-image parallax" data-speed="0.16" role="img" aria-label="Himalayan mountains rising above the clouds"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> A country of a thousand worlds</p>
+        <h1 id="heroTitle">Find your<br><em>somewhere.</em></h1>
+        <p class="hero-copy">From mountain silence to streets that never sleep. India is not one journey. It's a thousand ways to feel alive.</p>
+        <a class="round-link" href="#destinations"><span>Explore the extraordinary</span><b aria-hidden="true">↓</b></a>
+      </div>
+      <div class="hero-bottom">
+        <span>08° 04′ N — 37° 06′ N</span>
+        <span class="hero-note">A living map of wonder</span>
+        <span>SCROLL TO DISCOVER <b aria-hidden="true">↓</b></span>
+      </div>
+      <div class="hero-index">01 <span>/ 04</span></div>
+    </section>
+
+    <section class="intro section-pad reveal" id="stories">
+      <div class="section-kicker"><span>01</span><span class="kicker-line"></span><span>More than a destination</span></div>
+      <div class="intro-grid">
+        <h2>A place that<br>stays <em>with you.</em></h2>
+        <div class="intro-text">
+          <p class="large-copy">Some places are seen. Others are felt.</p>
+          <p>India moves from the hush of high mountains to the rhythm of ancient cities, from salt-white deserts to green backwaters. Follow the feeling, take the longer road, and let the unexpected become the story.</p>
+          <a class="text-link" href="#destinations">Meet the many sides of India <span>↗</span></a>
+        </div>
+      </div>
+      <div class="intro-stats" aria-label="India at a glance">
+        <div><strong>01</strong><span>incredible country</span></div>
+        <div><strong>28</strong><span>states to discover</span></div>
+        <div><strong>∞</strong><span>ways to feel wonder</span></div>
+      </div>
+    </section>
+
+    <section class="destinations section-pad" id="destinations">
+      <div class="section-heading reveal">
+        <div class="section-kicker"><span>02</span><span class="kicker-line"></span><span>Choose your feeling</span></div>
+        <h2>Where will India<br><em>take you?</em></h2>
+        <p>Three beginnings. Countless roads beyond.</p>
+      </div>
+
+      <article class="destination-card destination-large reveal">
+        <div class="destination-photo photo-rajasthan parallax" data-speed="0.08" role="img" aria-label="Golden sand dunes and desert landscape in Rajasthan"></div>
+        <div class="destination-gradient"></div>
+        <div class="destination-top"><span>01 / THE DESERT</span><span>RAJASTHAN</span></div>
+        <div class="destination-content">
+          <p class="eyebrow">Golden hour, endless horizon</p>
+          <h3>Chase the<br><em>golden.</em></h3>
+          <p>Desert skies, painted havelis and stories carried on the wind.</p>
+          <a class="circle-arrow" href="#regions" aria-label="Explore Rajasthan in the regions section">↗</a>
+        </div>
+      </article>
+
+      <div class="destination-pair">
+        <article class="destination-card destination-small reveal">
+          <div class="destination-photo photo-kerala parallax" data-speed="0.06" role="img" aria-label="A traditional houseboat on Kerala's green backwaters"></div>
+          <div class="destination-gradient"></div>
+          <div class="destination-top"><span>02 / THE BACKWATERS</span><span>KERALA</span></div>
+          <div class="destination-content">
+            <p class="eyebrow">Let the world slow down</p>
+            <h3>Find your<br><em>stillness.</em></h3>
+            <p>Waterways, rain-soft greens and quiet mornings.</p>
+            <a class="circle-arrow" href="#regions" aria-label="Explore Kerala in the regions section">↗</a>
+          </div>
+        </article>
+        <article class="destination-card destination-small reveal">
+          <div class="destination-photo photo-varanasi parallax" data-speed="0.06" role="img" aria-label="Warm evening light along the ghats of Varanasi"></div>
+          <div class="destination-gradient"></div>
+          <div class="destination-top"><span>03 / THE OLD CITY</span><span>VARANASI</span></div>
+          <div class="destination-content">
+            <p class="eyebrow">A thousand lives in one place</p>
+            <h3>Feel the<br><em>timeless.</em></h3>
+            <p>River mornings, glowing lamps and living history.</p>
+            <a class="circle-arrow" href="#regions" aria-label="Explore Varanasi in the regions section">↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="interlude">
+      <div class="interlude-photo parallax" data-speed="0.12" role="img" aria-label="A winding road through the dramatic Himalayas"></div>
+      <div class="interlude-overlay"></div>
+      <div class="interlude-content reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Take the road less expected</p>
+        <h2>Let the journey<br>change <em>you.</em></h2>
+        <p>No checklist can capture it. Leave room for detours, conversations, and the moments you didn't plan.</p>
+        <a class="light-link" href="#journey">Your journey starts here <span>↗</span></a>
+      </div>
+      <span class="interlude-caption">THE LONG WAY IS SOMETIMES THE BEST WAY</span>
+    </section>
+
+
+    <section class="film-section section-pad" id="film">
+      <div class="film-heading reveal">
+        <div>
+          <div class="section-kicker"><span>03</span><span class="kicker-line"></span><span>India in motion</span></div>
+          <h2>Don't just see it.<br><em>Feel the frame.</em></h2>
+        </div>
+        <p>A cinematic look at the colours, landscapes and everyday magic that make India unforgettable.</p>
+      </div>
+      <div class="film-stage reveal">
+        <div class="film-poster" id="filmPoster" role="img" aria-label="Cinematic travel film about India">
+          <div class="film-poster-shade"></div>
+          <div class="film-orbit orbit-one" aria-hidden="true"></div>
+          <div class="film-orbit orbit-two" aria-hidden="true"></div>
+          <div class="film-poster-content">
+            <span class="film-label">THE INDIA FILM / 01</span>
+            <button class="film-play" id="playFilm" type="button" aria-label="Play India travel film"><span>▶</span></button>
+            <p class="film-caption">A country that moves you</p>
+            <span class="film-duration">CINEMATIC JOURNEY <b>↗</b></span>
+          </div>
+          <div class="film-embed" id="filmEmbed" hidden></div>
+        </div>
+        <div class="film-footnote"><span>BEST EXPERIENCED FULL FRAME</span><span>VIDEO LOADS WHEN YOU PRESS PLAY</span></div>
+      </div>
+    </section>
+
+    <section class="regions section-pad" id="regions">
+      <div class="regions-head reveal">
+        <div>
+          <div class="section-kicker"><span>04</span><span class="kicker-line"></span><span>Explore by region</span></div>
+          <h2>Many worlds.<br><em>One India.</em></h2>
+        </div>
+        <p>Start with a direction. Follow it wherever curiosity leads.</p>
+      </div>
+      <div class="region-list">
+        <a class="region-row reveal" href="#journey"><span class="region-number">01</span><span class="region-name">The North</span><span class="region-description">High mountains, sacred rivers, old capitals</span><span class="region-arrow">↗</span></a>
+        <a class="region-row reveal" href="#journey"><span class="region-number">02</span><span class="region-name">The South</span><span class="region-description">Coastal roads, temples, lush green worlds</span><span class="region-arrow">↗</span></a>
+        <a class="region-row reveal" href="#journey"><span class="region-number">03</span><span class="region-name">The East</span><span class="region-description">Tea gardens, living traditions, riverlands</span><span class="region-arrow">↗</span></a>
+        <a class="region-row reveal" href="#journey"><span class="region-number">04</span><span class="region-name">The West</span><span class="region-description">Desert light, creative cities, wide coastlines</span><span class="region-arrow">↗</span></a>
+        <a class="region-row reveal" href="#journey"><span class="region-number">05</span><span class="region-name">The Northeast</span><span class="region-description">Cloud forests, hills, rivers and rich cultures</span><span class="region-arrow">↗</span></a>
+        <a class="region-row reveal" href="#journey"><span class="region-number">06</span><span class="region-name">The Islands</span><span class="region-description">Blue horizons, reefs and quiet beaches</span><span class="region-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="closing" id="journey">
+      <div class="closing-photo parallax" data-speed="0.08" role="img" aria-label="Sun setting over a peaceful Indian landscape"></div>
+      <div class="closing-overlay"></div>
+      <div class="closing-content reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Your story is out there</p>
+        <h2>India is calling.<br><em>Go feel it.</em></h2>
+        <a class="round-link" href="#top"><span>Back to the beginning</span><b aria-hidden="true">↑</b></a>
+      </div>
+      <span class="closing-stamp">THE INDIA / MADE FOR THE CURIOUS</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-mark" href="#top">THE <span>INDIA</span><i>®</i></a>
+    <p>A little inspiration for your next big journey.</p>
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+    <small>Independent travel concept · Images load from Unsplash when online</small>
+  </footer>
+</body>
+</html>
